@@ -1,0 +1,359 @@
+/* Reset Selector */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* HTML style for the page */
+html {
+    background-image: url(../Images/Mario.gif); 
+    background-repeat: repeat;
+}
+
+/* Main navigation menu */
+#nav_menu ul {
+    list-style-type: none;
+    position: relative;
+}
+#nav_menu ul li {
+    float: left;
+}
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+#nav_menu ul ul li {
+    float: none;
+    position: relative;
+}
+#nav_menu ul ul li ul {
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+#nav_menu ul li.console ul li ul {
+    position: absolute;
+    left: -100%;
+    top: 0;
+}
+#nav_menu ul li:hover > ul {
+    display: block;
+}
+#nav_menu > ul::after {
+    content: "";
+    display: block;
+    clear: both; }
+
+/* Formatting menu for navigation */
+#nav_menu ul {
+    margin: 0;
+    padding: 0;
+}
+#nav_menu ul li a {
+    text-align: center;
+    display: block;
+    width: 225px;
+    padding: 0.75em 0;
+    text-decoration: none;
+    background-color: #800000;
+    color: white;
+    font-weight: bold;
+}
+#nav_menu ul li.console a {
+    width: 160px;
+}
+#nav_menu ul li a.current {
+    color: yellow;
+}
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+    background-color: gray;
+}
+
+/* the styles for the elements */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 900px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
+    border: 3px solid #931420;
+    background-color: #fffded;
+}
+
+a:hover, a:focus {font-style: italic;}
+
+/* the styles for the header */
+header img {
+	float: left;
+    padding-right: 0px;
+    padding-left: 80px;
+}
+header {
+    border-bottom: 3px solid #931420;
+    padding-top: 1.5em;
+    padding-bottom: 2.2em;
+    background: linear-gradient(90deg, #ffff66, #ffa31a 0%, #ffff66, #e6ac00);
+}
+header h2 {
+    font-size: 170%;
+    color: #800000;
+    align-content: center;
+}
+header h3 {
+    font-size: 130%;
+    font-style: italic;
+}
+
+/* the styles for the main section */
+main {
+	clear: left;
+    padding-right: 30px;
+    padding-left: 30px; 
+}
+main h1 {
+    font-size: 150%;
+    border: 5px double black;
+    border-radius: 10px 10px;
+    box-shadow: 2px 2px 3px 3px black;
+    padding-left: 4.5em;
+    padding-top: .3em;
+    padding-bottom: .3em;
+    
+}
+main h2 {
+    font-size: 130%;
+    color: #800000;
+    padding-top: .5em;
+    padding-bottom: .25em;
+}
+main img {
+    padding-top: 1em;
+    padding-bottom: 2em;
+    padding-right: 2em;
+    padding-left: 5em;
+}
+.Media img {
+    padding-left: 8.5em;
+    padding-right: 4em;
+}
+
+.Button {
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+/* Shopping Cart Style */
+.shop-item {
+    margin: 30px;
+}
+.item-title {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+.item-image {
+    height: 250px;
+}
+.item-details {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.item-price {
+    flex-grow: 1;
+    color: #333;
+    width: 75px;
+}
+
+.shop-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.section-header {
+    font-family: "fantasy";
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+.button-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+.button-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.button-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+}
+
+.button-cart-purchase {
+    display: block;
+    margin: 20px auto 20px auto;
+    font-size: 1.05em;
+}
+
+
+/* the styles for the forum */
+fieldset {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: .5em;
+}
+legend {
+    color: #931420;
+    font-weight: bold;
+    font-size: 85%;
+    margin-bottom: .5em;
+}
+
+.some-class {
+    float: left;
+    clear: none;
+}
+
+label {
+    float: left;
+    width: 12em;
+    text-align: right;
+}
+label, input, select {
+	font-size: 90%;
+}
+input, select {
+    width: 15em;
+    margin-left: .5em;
+    margin-bottom: .5em;
+}
+input:required, input[required] {
+	border: 3px solid black;
+}
+input:valid {
+	border: 1px solid black;
+}
+input:invalid {
+	box-shadow: none;
+}
+br {
+    clear: both;
+}
+#buttons input {
+	width: 10em;
+}
+#Payment label {
+    float: none;
+}
+#Payment input {
+    width: auto;
+    margin-left: 3em;
+}
+#CreditCard #month{
+    width: 7em;
+}
+#CreditCard #year{
+    width: 5em;
+}
+
+/* the styles for the footer */
+footer {
+    border-top: 2px solid #931420;
+    border-bottom: 2px solid #931420;
+    background-color: #931420;
+}
+footer p {
+    text-align: center;
+    color: white;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Video Game Website">
+    <meta name="author" content="Long Hinh">
+    <meta name="keywords" content="Video, Game, Online Store, Digital">
+    <!-- Title of website that appears on the browser tab -->
+    <title>Gameology Planet - Shopping Cart</title>
+    <!-- Favicon for website -->
+    <link rel="shortcut icon" href="../Images/favicon.ico">
+    <link rel="stylesheet" href="../Styles/Main.css">
+    <link ref="stylesheet" href="Styles/">
+    <script src="../javascripts/script.js" async></script>
+</head>
+
+<body>
+  <!-- Heading for webpage -->
+   <header>
+       <img src="../Images/Alien.png" alt="Image of a Dragon" height="80">
+       <h2><center>Gameology Planet</center></h2>
+       <h3><center>Shopping Cart</center></h3>
+   </header>
+   
+   <!-- Navigvation Menu -->
+   <nav id="nav_menu">
+       <ul>
+           <li><a href="../index.html" class="current">Home</a></li>
+           <li><a href="#" class="console">Game Console</a>
+               <ul>
+                   <li>
+                       <a href="../Game%20Console%20Websites/PS4.html">PS4</a>
+                   </li>
+                   <li>
+                       <a href="../Game%20Console%20Websites/Xbox.html">Xbox</a>
+                   </li>
+                   <li>
+                       <a href="../Game%20Console%20Websites/Switch.html">Switch</a>
+                   </li>
+               </ul>
+           </li>
+            <li><a href="../VideoGame/VideoGame.html" class="Video_Game">Video Games</a></li>
+            <li><a href="Shoppingcart.html">Shopping Cart</a></li>
+       </ul>
+   </nav>
+   
+   <!-- Main contents -->
+   <main>
+    <section>
+    <!-- Payment -->
+     <fieldset id="Payment">
+         <legend>Payment Method</legend>
+         <input type="radio" name="payment" id="credit" value="credit">
+         <label for="credit">Credit Card</label>
+         <input type="radio" name="payment" id="debit"
+         value="debit">
+         <label for="debit">Debit Card</label>
+     </fieldset>
+     <fieldset id="CreditCard">
+         <legend>Credit Card Information</legend>
+         <label for="card_type">Card Type:</label>
+         <select name="card_type" id="card_type">
+             <option value="v">Visa</option>
+             <option value="m">MasterCard</option>
+             <option value="d">Discover</option>
+         </select>
+         <br>
+         <label for="card_number">Card Number:</label><input type="text" name="card_number" id="card_number" required placeholder="16 digits" pattern="\d{16}" title="16 digits">
+         <br>
+         <label for="expire_date">Expiration date:</label><select name="month" id="month">
+            <option value="j">January</option>
+			<option value="f">February</option>
+            <option value="m">March</option>
+			<option value="a">April</option>
+			<option value="may">May</option>
+			<option value="june">June</option>
+			<option value="july">July</option>
+		    <option value="august">August</option>
+            <option value="september">September</option>   <option value="october">October</option>
+            <option value="november">November</option><option value="december">December</option>
+        </select>
+            <select name="year" id="year">
+				<option value="2015">2015</option>
+				<option value="2016">2016</option>
+				<option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+             </select>
+     </fieldset>
+     <!-- A confirmation form -->
+     <fieldset id="buttons">
+         <legend>Submit Your Order</legend>
+         <label>&nbsp;</label>
+         <button class="button-cart-purchase" type="button">PURCHASE</button>
+    </fieldset>     
+    </section>
+      <!-- Social Media Section -->
+       <h2><center>Social Media</center></h2>
+       <a href="#" class="Media">
+           <img src="../Images/Facebook.jpg" alt="Facebook Logo" height="63" width="63">
+       </a>
+       <a href="#" class="Media">
+           <img src="../Images/Instagram.png" alt="Instagram Logo" height="50" width="50">
+       </a>
+       <a href="#" class="Media">
+           <img src="../Images/Twitter.png" alt="Twitter Logo" height="53" width="53">
+       </a>
+   </main>
+   
+    <!-- Copyright information -->
+   <footer>
+   <p>&copy; 2021, Gameology Planet, Chicago, IL 12345</p>
+   </footer>
+</body>
+</html>   
